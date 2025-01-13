@@ -1,109 +1,133 @@
-<!DOCTYPE html> <!-- tipo de documento -->
-<html lang="pt-br"> <!-- linguagem que está sendo falada-->
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<head> <!-- informações sobre o cabeçalho -->
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste Max J Streit</title> <!-- Titulo q vai na pág -->
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body> <!-- estrutura da página -->
-    <header>
-        <h1>Max Jacob</h1>
-        <nav> <!-- Seção de navegação do site-->
-            <ul> <!-- Lista não ordenada para links do menu -->
-                <li> <a href="#sobre">Sobre mim</a> </li> <!-- LI´s serão os tópicos-->
-                <li> <a href="#projeto">Projetos</a> </li> <!-- O # é utilizado para achar a seção dentro da pág-->
-                <li> <a href="#contato">Contato</a> </li>
-                <!-- <li> <a href="https://google.com.br/" target="_blank"> Google </a> </li> target="_blank" faz abrir em outra página -->
-                <!-- <li>Sobre mim</li> -->
-            </ul>
-        </nav>
-    </header>
+<body>
+    <nav id="navbar">
+        <div id="brand">
+            <a href="#">Max Jacob</a>
+        </div>
+        <ul>
+            <li><a href="#presentation">Sobre mim</a></li>
+            <li><a href="#about">Habilidades & Experiências</a></li>
+            <li><a href="#skills">Portifólio</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
 
-    <section id="sobre">
-        <h2>Sobre mim</h2>
-
-        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEVWOl7t_VGvw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1699142351011?e=1741824000&v=beta&t=DWA0KP0Ql-ONTsI7aI_-fCGlM4z2_c5ta7xQYtassbE"
-            alt="Foto de Perfil" title="Imagem da Foto de Perfil de Max">
-
-        <article> <!-- Artigo é um conteúdo independente -->
-
-            <p>Meu nome é Max Jacob Streit, tenho 17 anos e sou estudante do Ensino Médio Bailarina Liselott Trinks.
-                Atualmente estou fazendo um curso técnico em eletroeletrônica no IFSC Câmpus Joinville e procuro uma
-                oportunidade de estágio em que possa desenvolver habilidades tanto práticas quanto teóricas.</p>
-
-        </article>
-
-        <aside> <!-- "A parte do"-->
-
-            <h3>Habilidades</h3>
-
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-
-        </aside>
-
-    </section>
-
-    <section id="projeto">
-
-        <h2>Projetos</h2>
-
-
-        <article>
-
-            <h3>Portifólio</h3>
-
-            <p>Este foi um dos primeiros sites que desenvolvi aprendendo Front-End</p>
-
-        </article>
-
-    </section>
-
-    <footer> <!-- Rodapé da página -->
-        <p>Direitos reservados a Max Jacob</p>
-
-        <section id="contato">
-
-            <h2>Contato</h2>
-
-            <p>Tem um projeto em mente? Entre em contato</p>
-
-            <form action="">
-
-                <label for="nome">Nome: </label>
-                <input type="text"  id="nome" name="nome" required> <br>
-                
-                <label for="email">Email: </label>
-                <input type="email"  id="email" name="email" required> <br>
-                
-                <label for="telefone">Telefone: </label>
-                <input type="tel"  id="telefone" name="telefone"> <br>
-
-                <label for="assunto">Assunto: </label>
-                <select name="assunto" id="assunto">
-                    <option value="orcamento">Orçamentos</option>
-                    <option value="duvida">Dúvidas</option>
-                    <option value="outro">Outros</option>
-                </select> <br>
-
-                <label for="mensagem">Mensagem: </label>
-                <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea> <br>
-
-                <input type="checkbox" id="inscricao" name="inscricao">
-                <label for="inscricao">Deseja receber mais notícias de meus trabalhos? Fique por dentro</label> <br>
-
-                <input type="submit" value="Enviar mensagem">
-
-            </form>
-
+    <main id="page-content">
+        <section id="presentation">
+            <img src="src/Foto-de-Perfil.jpg" alt="Foto de perfil">
+            <h1>Max Jacob</h1>
+            <span>Desenvolvedor Front-End</span>
         </section>
+        <section id="about">
+            <h1>Sobre mim</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat earum, beatae id molestias, atque culpa
+                praesentium neque sunt eveniet, repellat temporibus itaque inventore autem quam adipisci distinctio est
+                excepturi esse. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda soluta eius
+                laboriosam
+                ea totam labore saepe odio neque ratione! Quo corrupti error harum qui reprehenderit ea facere, quia
+                voluptatem tempore.</p>
+        </section>
+
+        <section id="skills">
+            <h1>Habilidades & Experiências</h1>
+            <div>
+                <h2>Experiências</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo nisi aliquid ex dicta laboriosam,
+                    voluptates perspiciatis? Soluta ex sapiente a atque illum alias. Fuga molestiae culpa voluptates
+                    aliquam
+                    libero!</p>
+            </div>
+            <div>
+                <h2>Experiências</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo nisi aliquid ex dicta laboriosam,
+                    voluptates perspiciatis? Soluta ex sapiente a atque illum alias. Fuga molestiae culpa voluptates
+                    aliquam
+                    libero!</p>
+            </div>
+            <div>
+                <h2>Experiências</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo nisi aliquid ex dicta laboriosam,
+                    voluptates perspiciatis? Soluta ex sapiente a atque illum alias. Fuga molestiae culpa voluptates
+                    aliquam
+                    libero!</p>
+            </div>
+            <div>
+                <h2>Experiências</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo nisi aliquid ex dicta laboriosam,
+                    voluptates perspiciatis? Soluta ex sapiente a atque illum alias. Fuga molestiae culpa voluptates
+                    aliquam
+                    libero!</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h1>Portifólio</h1>
+            <div>
+                <img src="https://www.somosicev.com/wp-content/uploads/2021/12/amecaroboengineeredarts-2.jpg"
+                    alt="Projeto 1">
+                <h2>Projeto 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo nisi aliquid ex dicta laboriosam,
+                    voluptates perspiciatis? Soluta ex sapiente a atque illum alias. Fuga molestiae culpa voluptates
+                    aliquam
+                    libero!</p>
+            </div>
+            <div>
+                <img src="https://umbo.net.br/wp-content/uploads/2020/01/original-bc9005f2201cfb175f85da1edd075222.jpg.webp"
+                    alt="Projeto 2">
+                <h2>Projeto 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo nisi aliquid ex dicta laboriosam,
+                    voluptates perspiciatis? Soluta ex sapiente a atque illum alias. Fuga molestiae culpa voluptates
+                    aliquam
+                    libero!</p>
+            </div>
+            <div>
+                <img src="https://fastcompanybrasil.com/wp-content/uploads/2024/02/robos-brancos.jpg" alt="Projeto 3">
+                <h2>Projeto 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo nisi aliquid ex dicta laboriosam,
+                    voluptates perspiciatis? Soluta ex sapiente a atque illum alias. Fuga molestiae culpa voluptates
+                    aliquam
+                    libero!</p>
+            </div>
+            <div>
+                <img src="https://dwsemanadedesign.com.br/wp-content/uploads/2023/12/Photo-by-Japan-House-Sao-Paulo-on-November-13-2023.-May-be-an-image-of-screen.jpg"
+                    alt="Projeto 4">
+                <h2>Projeto 4</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illo nisi aliquid ex dicta laboriosam,
+                    voluptates perspiciatis? Soluta ex sapiente a atque illum alias. Fuga molestiae culpa voluptates
+                    aliquam
+                    libero!</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <form id="contact-form">
+                <h1>Contato</h1>
+                <input type="text" name="name" id="name" placeholder="Seu nome" required>
+                <input type="email" name="email" id="email" placeholder="Seu email" required>
+                <input type="assunto" name="assunto" id="assunto" placeholder="Assunto" required>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <a href="#">Linkedin</a>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Whatsapp</a>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
