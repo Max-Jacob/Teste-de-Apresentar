@@ -1,1 +1,254 @@
+/*Globais css -------------------------------------*/
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #444;
+    line-height: 1;
+    background: linear-gradient( rgba(44, 62, 80, 1), rgba(52, 152, 219, 0.95), rgb(101, 42, 189), rgb(48, 80, 44), rgba(55, 219, 52, 0.95), rgb(108, 189, 42) ), url('freepik__upload__36785.png') no-repeat center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: 900;
+}
+
+p {
+    font-weight: 1.5;
+}
+
+a,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: rgb(77, 153, 0);
+}
+
+/*Classes compartilhadas -------------------------------------*/
+.container {
+    width: 100%;
+    text-align: center;
+    padding: 5em 8em;
+}
+
+/*Flex grid -------------------------------------*/
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.item-grid {
+    box-sizing: border-box;
+    padding: 16px;
+    text-align: center;
+}
+
+/*Elementos específicos -------------------------------------*/
+#navbar {
+    background-color: #fff;
+    padding: 1em 8em;
+    box-shadow: 0 2px 2px rgb(93, 93, 93);
+    position: sticky;
+    top: 0;
+}
+
+#navbar .nav-toggle {
+    /* float: right; */
+    cursor: pointer;
+    font-size: 1.25em;
+    display: inline-block;
+}
+
+#navbar #brand {
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: 900;
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+/*Section Presentation -------------------------------------*/
+
+#presentation {
+    padding-top: 100px;
+    background-size: cover;
+    color: #fff;
+}
+
+#presentation h1 {
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+}
+
+#presentation img {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 30%;
+}
+
+#presentation span {
+    display: inline-block;
+    width: 100%;
+}
+
+/*Section About -------------------------------------*/
+
+#about {
+    color: #fff;
+}
+
+/*Section Skills -------------------------------------*/
+
+#skills {
+    color: #fff;
+}
+
+/*Section Portfolio -------------------------------------*/
+
+#portfolio {
+    color: #fff;
+}
+
+#portfolio .container-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+} 
+
+#portfolio .item-grid img {
+    width: 100%;
+    margin: 0;
+}
+
+#portfolio .item-grid {
+    border: solid 10px #a0a0a0;
+    text-align: center;
+    padding: 0px;   
+}
+
+#portfolio h1 {
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+}
+
+/*Section Contact -------------------------------------*/
+
+#contact {
+    border-top: solid 8px #ff0000;
+    background-color: #787878;
+    padding: 3%;
+    margin: 20px;
+}
+
+#contact input[type = "text"], #contact input[type = "email"], #contact textarea {
+    padding: 2em;
+    display: inline-block;
+    height: 50px;
+    border: solid 0.5px #CCC;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contact input[type = "submit"] {
+    background-color: aqua;
+    color: #fff;
+    padding: 2em;
+    width: 100%;
+    border-radius: 5px;
+    border: solid 0.5px #CCC;
+    cursor: pointer;
+}
+
+#contact textarea {
+    height: 200px;
+}
+
+.container-grid.one-column {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+}
+
+/*Footer -------------------------------------*/
+
+#footer {
+    background-color: #2d2c2c; 
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1em;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+} 
+
+footer a:hover {
+    color: #ff0000;
+}
+
+/*Responsividade -------------------------------------*/
+@media (max-width: 500px) {
+    .container{
+        padding: 10% 3%;
+    }
+    #navbar {
+        padding: 10% 3%;
+    }
+    
+}
+@media (max-width: 979px) {
+    #navbar .nav-toggle {
+        display: block;
+    }
+    #navbar ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    #navbar ul li {
+        display: inline-block;
+        margin-right: 0.5em;
+        width: 100%;
+        padding: 1em 8em;
+        background-color: #fff;
+        border-bottom: solid 1px #CCC;
+    }
+}
+@media (min-width: 980px) {
+    #navbar .nav-toggle {
+        display: none;
+    }
+}
