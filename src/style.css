@@ -140,12 +140,13 @@ a:focus {
 }
 
 #portfolio .container-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 } 
 
 #portfolio .item-grid img {
     width: 100%;
     margin: 0;
+    height: 100%;
 }
 
 #portfolio .item-grid {
